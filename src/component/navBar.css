@@ -1,0 +1,15 @@
+.coustomNav {
+  width: 99vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.6s;
+  z-index: 2;
+}
+
+.coustomNavhidden {
+  top: -100px;
+}
+.topmargin {
+  top: -120px;
+}
