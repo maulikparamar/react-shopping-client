@@ -6,6 +6,7 @@ import "./navBar.css";
 const NavBar = () => {
   var prevScroll = 0;
   const [visible, setVisible] = useState(true);
+
   const handleScroll = () => {
     setVisible(prevScroll > window.pageYOffset);
     prevScroll = window.pageYOffset;
@@ -104,27 +105,49 @@ const NavBar = () => {
         <div className="main Navlink">
           <ul>
             <li>
-              <NavLink to="/" className="blackcolor">
+              <NavLink
+                exact
+                to="/home"
+                activeClassName="navbar__link--active"
+                className="navbar__link"
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/product" className="blackcolor">
+              <NavLink
+                exact
+                to="/product"
+                activeClassName="navbar__link--active"
+                className="navbar__link"
+              >
                 Product
               </NavLink>
             </li>
             <li>
-              <NavLink to="#" className="blackcolor">
+              <NavLink
+                to="#"
+                activeClassName="navbar__link--active"
+                className="navbar__link"
+              >
                 Shop
               </NavLink>
             </li>
             <li>
-              <NavLink to="#" className="blackcolor">
+              <NavLink
+                to="#"
+                activeClassName="navbar__link--active"
+                className="navbar__link"
+              >
                 About us
               </NavLink>
             </li>
             <li>
-              <NavLink to="#" className="blackcolor">
+              <NavLink
+                to="#"
+                activeClassName="navbar__link--active"
+                className="navbar__link"
+              >
                 Contect Me
               </NavLink>
             </li>

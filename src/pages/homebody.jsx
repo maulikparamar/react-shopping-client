@@ -41,7 +41,7 @@ const Homebody = () => {
       >
         <div>
           <div className="card" style={{ width: "14rem" }}>
-            <img className="card-img-top" src={image} alt="Card image cap" />
+            <img className="card-img-top" src={image} alt="Shoppybeen" />
             <div className="card-body">
               <p className="card-text">asdfe bulk of the card's content.</p>
             </div>
@@ -50,7 +50,7 @@ const Homebody = () => {
         <div>
           {" "}
           <div className="card" style={{ width: "14rem" }}>
-            <img className="card-img-top" src={image} alt="Card image cap" />
+            <img className="card-img-top" src={image} alt="Shoppybeen" />
             <div className="card-body">
               <p className="card-text">he bulk of the card's content.</p>
             </div>
@@ -59,7 +59,7 @@ const Homebody = () => {
         <div>
           {" "}
           <div className="card" style={{ width: "14rem" }}>
-            <img className="card-img-top" src={image} alt="Card image cap" />
+            <img className="card-img-top" src={image} alt="Shoppybeen" />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up
@@ -71,7 +71,7 @@ const Homebody = () => {
         <div>
           {" "}
           <div className="card" style={{ width: "14rem" }}>
-            <img className="card-img-top" src={image} alt="Card image cap" />
+            <img className="card-img-top" src={image} alt="Shoppybeen" />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up
@@ -83,7 +83,7 @@ const Homebody = () => {
         <div>
           {" "}
           <div className="card" style={{ width: "14rem" }}>
-            <img className="card-img-top" src={image} alt="Card image cap" />
+            <img className="card-img-top" src={image} alt="Shoppybeen" />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up

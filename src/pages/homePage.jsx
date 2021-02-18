@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Carousel } from "react-bootstrap";
 import image1 from "../component/images/1.jpg";
 import image2 from "../component/images/2.jpg";
@@ -7,15 +7,11 @@ import Homebody from "./homebody";
 import men from "../component/images/men.jpg";
 import women from "../component/images/women.jpg";
 import shoes from "../component/images/shoes.jpg";
-import logoimage from "../component/images/logoimg.png";
+
 import { useState } from "react";
-import {
-  AiFillGoogleCircle,
-  AiFillFacebook,
-  AiFillTwitterCircle,
-} from "react-icons/ai";
+
 import "../component/navBar.css";
-import { FaTwitch } from "react-icons/fa";
+import FooterPage from "../component/footerPage";
 const HomePage = () => {
   const [products, setProducts] = useState([
     { name: "men", img: men },
@@ -77,7 +73,7 @@ const HomePage = () => {
             {products &&
               products.map((t, i) => (
                 <div className="maitn" key={i}>
-                  <img className="img" src={t.img} alt="no image" />
+                  <img className="img" src={t.img} alt="Shoppybeen" />
                   <a className="buttonshado">{t.name}</a>
                 </div>
               ))}
@@ -104,24 +100,7 @@ const HomePage = () => {
           </div>
         </div>
       </main>
-
-      <div style={{ height: "200px", width: "100%" }}>
-        <footer className="footerpage">
-          <div className="foo">
-            <div style={{ fontSize: "40px", float: "left", width: "50%" }}>
-              <h3>maulik parmar</h3>
-              <AiFillGoogleCircle />
-              <AiFillFacebook />
-              <AiFillTwitterCircle />
-              <FaTwitch />
-            </div>
-            <div className="fooright">
-              <h1>asd</h1>
-              <img src={logoimage} style={{ width: "30%" }} />
-            </div>
-          </div>
-        </footer>
-      </div>
+      <FooterPage />
     </React.Fragment>
   );
 };

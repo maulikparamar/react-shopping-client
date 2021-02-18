@@ -205,3 +205,134 @@ body {
   float: right;
   width: 20%;
 }
+
+.productimagemulti img {
+  width: 40%;
+  height: 5%;
+  margin: 8px 20%;
+}
+.productimg img {
+  width: 100%;
+  height: 100%;
+}
+.backgroundcolors {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./component/images/backgroundcolor.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.loginbackground {
+  margin: 2% auto;
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+.loginbackground label {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 6%;
+}
+.logincontaint {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+.logincontaint input {
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid rgb(51, 51, 51, 0.2);
+  outline: none;
+}
+.logincontaint input:hover {
+  border-bottom: 1px solid rgb(51, 51, 51);
+}
+.logincontaint h5 {
+  margin: 10px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.loginbottom button {
+  background: linear-gradient(to left, rgb(250, 0, 255), rgb(28, 196, 228));
+  width: 60%;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+.loginicon {
+  margin: 20px;
+}
+.loginicon a {
+  cursor: pointer;
+  font-weight: 600;
+}
+.loginicon a:hover {
+  border-bottom: 1px solid black;
+}
+.loginicon h6 {
+  margin-top: 20px;
+}
+.cartlogin {
+  font-size: 100px;
+  position: absolute;
+  animation-name: cartspeed;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  top: 40%;
+}
+.loginbackground {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+}
+@keyframes cartspeed {
+  0% {
+    left: 0;
+  }
+  1% {
+    transform: rotate(50deg);
+  }
+  50% {
+    left: 50%;
+    transform: rotate(-50deg);
+  }
+  100% {
+    left: 90%;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .backgroundcolors {
+    width: 100%;
+    height: 100%;
+  }
+  .loginbackground {
+    width: 70%;
+    height: 90%;
+    margin-top: 20px;
+  }
+  .loginbackground label {
+    font-size: 35px;
+  }
+  .logincontaint {
+    width: 70%;
+  }
+}
